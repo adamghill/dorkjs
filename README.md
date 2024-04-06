@@ -2,8 +2,8 @@
 
 Remember jQuery? It's like that, but no one else uses it.
 
-https://github.com/adamghill/dorkjs
-https://www.npmjs.com/package/dorkjs
+- https://github.com/adamghill/dorkjs
+- https://www.npmjs.com/package/dorkjs
 
 ## Installation
 
