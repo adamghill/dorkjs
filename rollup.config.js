@@ -18,14 +18,14 @@ import pkg from "./package.json" assert { type: "json" };
 export default {
   input: "./src/index.js",
   output: {
-    file: `./dist/${pkg.name}.min.js`,
+    file: `./dist/dork.min.js`,
     format: "iife",
     name: "dork",
   },
   plugins: [
     terser(),
     banner2(
-      () => `/* ${pkg.name}.js v${pkg.version} https://github.com/adamghill/dork */
+      () => `/* dork.js v${pkg.version} https://github.com/adamghill/dork */
 `
     ),
   ],
