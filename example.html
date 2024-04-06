@@ -1,0 +1,39 @@
+<html>
+
+<head>
+</head>
+
+<body>
+  <div>
+    <span id="test1">Test 1</span>
+  </div>
+
+  <div>
+    <button id="button1">Button 1</button>
+
+    <p id="p1">
+      Button has not been clicked
+    </p>
+  </div>
+
+  <!-- <script type="module">
+    import * as dork from "/src/index.js";
+  
+    // Set dork to the global
+    window.dork = dork;
+  </script> -->
+
+  <script src="dist/dork.min.js"></script>
+
+  <script>
+    dork.onload((event, document, $) => {
+      $.print("console", $.inner("#test1"));
+
+      $.listen("#button1", "click", () => {
+        $.inner($.$("#p1"), "Button has been clicked");
+      })
+    });
+  </script>
+</body>
+
+</html>
