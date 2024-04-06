@@ -32,7 +32,7 @@
   <!-- <script src="https://unpkg.com/dorkjs@latest"></script> -->
 
   <script>
-    dork.onload((event, document, $) => {
+    dork.onload((...[, , $]) => {
       $.print("console", $.inner("#test1"));
 
       $.listen("#button1", "click", () => {
