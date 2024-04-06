@@ -25,7 +25,7 @@ export default {
   plugins: [
     terser(),
     banner2(
-      () => `/* dork.js v${pkg.version} https://github.com/adamghill/dork */
+      () => `/* dork.js v${pkg.version} https://github.com/adamghill/dorkjs */
 `
     ),
   ],
