@@ -47,51 +47,164 @@ OR
 - 463 B (minified)
 - 370 B (brotli)
 
-## Features
+## Functions
 
-### $
+<dl>
+<dt><a href="#$">$(query)</a> ⇒ <code>Element</code></dt>
+<dd><p>Query for a particular element in a document. Classic.</p>
+</dd>
+<dt><a href="#$$">$$(query)</a> ⇒ <code>Array.&lt;Element&gt;</code></dt>
+<dd><p>Query for all elements in a document.</p>
+</dd>
+<dt><a href="#listen">listen(el, eventName, fn, preventDefault)</a></dt>
+<dd><p>Adds an event listener to a particular <code>Element</code>.</p>
+</dd>
+<dt><a href="#onload">onload(fn)</a></dt>
+<dd><p>Runs a function after the DOM content has been loaded.</p>
+</dd>
+<dt><a href="#data">data(el, data, val)</a></dt>
+<dd><p>Get (or set) the data value of an <code>Element</code>.</p>
+</dd>
+<dt><a href="#value">value(el, val)</a></dt>
+<dd><p>Get (or set) the value of an <code>Element</code>.</p>
+</dd>
+<dt><a href="#inner">inner(el, val)</a></dt>
+<dd><p>Get the inner HTML of an <code>Element</code>.</p>
+</dd>
+<dt><a href="#outer">outer(el, val)</a></dt>
+<dd><p>Get (or set) the outer HTML of an <code>Element</code>.</p>
+</dd>
+<dt><a href="#hide">hide(el)</a></dt>
+<dd><p>Hide an <code>Element</code>.</p>
+</dd>
+<dt><a href="#show">show(el)</a></dt>
+<dd><p>Show an <code>Element</code>.</p>
+</dd>
+<dt><a href="#print">print(messages)</a></dt>
+<dd><p>Writes to the console.</p>
+</dd>
+</dl>
 
-Query for a particular element in a document.
+<a name="$"></a>
 
-### $$
+## $(query) ⇒ <code>Element</code>
+Query for a particular element in a document. Classic.
 
+**Returns**: <code>Element</code> - The first `Element` found for the query.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| query | <code>String</code> | CSS-like query for an `Element`. |
+
+<a name="$$"></a>
+
+## $$(query) ⇒ <code>Array.&lt;Element&gt;</code>
 Query for all elements in a document.
 
-### listen
+**Returns**: <code>Array.&lt;Element&gt;</code> - All `Element`s found for the query.  
 
-Add an event listener to a particular `Element`.
+| Param | Type | Description |
+| --- | --- | --- |
+| query | <code>String</code> | CSS-like query for `Element`s. |
 
-### onload
+<a name="listen"></a>
 
-A convenience wrapper to wait for the document to load completely.
+## listen(el, eventName, fn, preventDefault)
+Adds an event listener to a particular `Element`.
 
-### data
 
-Get or set data on an `Element`.
+| Param | Type | Description |
+| --- | --- | --- |
+| el | <code>String</code> \| <code>Element</code> | `Element` to listen to. |
+| eventName | <code>String</code> | Event to listen to, e.g. "click", "mouseover", etc. |
+| fn | <code>function</code> | Function to run when a particular event is fired. |
+| preventDefault | <code>Boolean</code> | Whether or not `preventDefault()` should be called on the event. Useful for the click event. |
 
-### value
+<a name="onload"></a>
 
-Get or set the value of an `Element`.
+## onload(fn)
+Runs a function after the DOM content has been loaded.
 
-### inner
 
-Get or set the innerHTML of an `Element`.
+| Param | Type | Description |
+| --- | --- | --- |
+| fn | <code>function</code> | The function to run after the DOM content has been loaded. |
 
-### outer
+<a name="data"></a>
 
-Get or set the outerHTML of an `Element`.
+## data(el, data, val)
+Get (or set) the data value of an `Element`.
 
-### hide
 
+| Param | Type | Description |
+| --- | --- | --- |
+| el | <code>String</code> \| <code>Element</code> | `Element` to get the value for. |
+| data | <code>String</code> | Attribute to get the data from. |
+| val | <code>\*</code> | Value to set on the data. |
+
+<a name="value"></a>
+
+## value(el, val)
+Get (or set) the value of an `Element`.
+
+
+| Param | Type | Description |
+| --- | --- | --- |
+| el | <code>String</code> \| <code>Element</code> | `Element` to get the value for. |
+| val | <code>\*</code> | Value to set on the value. |
+
+<a name="inner"></a>
+
+## inner(el, val)
+Get the inner HTML of an `Element`.
+
+
+| Param | Type | Description |
+| --- | --- | --- |
+| el | <code>String</code> \| <code>Element</code> | `Element` to get the inner HTML for. |
+| val | <code>\*</code> | Value to set on the inner HTML. |
+
+<a name="outer"></a>
+
+## outer(el, val)
+Get (or set) the outer HTML of an `Element`.
+
+
+| Param | Type | Description |
+| --- | --- | --- |
+| el | <code>String</code> \| <code>Element</code> | `Element` to get the outer HTML for. |
+| val | <code>\*</code> | Value to set on the outer HTML. |
+
+<a name="hide"></a>
+
+## hide(el)
 Hide an `Element`.
 
-### show
 
+| Param | Type | Description |
+| --- | --- | --- |
+| el | <code>String</code> \| <code>Element</code> | The `Element` to hide. |
+
+<a name="show"></a>
+
+## show(el)
 Show an `Element`.
 
-### print
 
-A convenience wrapper around `console.log`.
+| Param | Type | Description |
+| --- | --- | --- |
+| el | <code>String</code> \| <code>Element</code> | The `Element` to show. |
+
+<a name="print"></a>
+
+## print(messages)
+Writes to the console.
+
+
+| Param | Type | Description |
+| --- | --- | --- |
+| messages | <code>Array.&lt;String&gt;</code> | The messages to write to the console. |
+
 
 ## Developing
 

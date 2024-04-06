@@ -1,0 +1,73 @@
+# dork
+
+Remember jQuery? It's like that, but no one else uses it.
+
+- https://github.com/adamghill/dorkjs
+- https://www.npmjs.com/package/dorkjs
+
+## Installation
+
+No build step needed. 🎉 
+
+Two options:
+
+1. Reference the script in unpkg in your HTML.
+
+```
+<script src="https://unpkg.com/dorkjs@latest"></script>
+```
+
+OR
+
+1. Download `dork.min.js` from the `dist` folder
+1. Reference the downloaded script in your HTML.
+
+```html
+<script src="dork.min.js"></script>
+```
+
+## Simple example of how `dork` looks
+
+```
+<button id="button1">Button has not been clicked</button>
+
+<script>
+    dork.onload((onloadEvent, document, $) => {
+      $.listen("#button1", "click", (buttonEvent, button) => {
+        $.print(button);
+        $.inner(button, "Button has been clicked");
+      });
+    });
+</script>
+```
+
+## Size
+
+- 934 B
+- 463 B (minified)
+- 370 B (brotli)
+
+{{>main}}
+
+## Developing
+
+### See examples
+
+1. `python3 -m http.server 8000`
+2. Go to http://localhost:8000/example.html in a browser
+
+### Run tests
+
+TBD
+
+### Build
+
+`npm run b`
+
+## Colophon
+
+- [Rollup](https://rollupjs.org)
+
+## Inspiration
+
+Every JavaScript ever.

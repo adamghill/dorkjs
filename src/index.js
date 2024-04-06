@@ -15,7 +15,7 @@ function _set_val_if_not_undefined(obj, attr, val) {
 /**
  * Query for a particular element in a document. Classic.
  * @param {String} query - CSS-like query for an `Element`.
- * @returns The first `Element` found for the query.
+ * @returns {Element} The first `Element` found for the query.
  */
 export function $(query) {
   return document.querySelector(query);
@@ -24,7 +24,7 @@ export function $(query) {
 /**
  * Query for all elements in a document.
  * @param {String} query - CSS-like query for `Element`s.
- * @returns All `Element`s found for the query.
+ * @returns {Element[]} All `Element`s found for the query.
  */
 export function $$(query) {
   return document.querySelectorAll(query);
