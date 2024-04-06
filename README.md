@@ -2,6 +2,9 @@
 
 Remember jQuery? It's like that, but no one else uses it.
 
+https://github.com/adamghill/dorkjs
+https://www.npmjs.com/package/dorkjs
+
 ## Installation
 
 No build step needed. Just download `dork.min.js` from the `dist` folder above and reference it in your HTML.
