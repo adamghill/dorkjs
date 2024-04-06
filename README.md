@@ -224,6 +224,7 @@ TBD
 ## Colophon
 
 - [Rollup](https://rollupjs.org)
+- [jsdoc2md](https://github.com/jsdoc2md/jsdoc-to-markdown)
 
 ## Inspiration
 
