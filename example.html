@@ -16,6 +16,8 @@
     </p>
   </div>
 
+  <!-- Current unbundled version -->
+  <!-- This does not work and I'm not quite sure why -->
   <!-- <script type="module">
     import * as dork from "/src/index.js";
   
@@ -23,7 +25,11 @@
     window.dork = dork;
   </script> -->
 
+  <!-- Current bundled version -->
   <script src="dist/dork.min.js"></script>
+
+  <!-- Latest bundled version -->
+  <!-- <script src="https://unpkg.com/dorkjs@latest"></script> -->
 
   <script>
     dork.onload((event, document, $) => {

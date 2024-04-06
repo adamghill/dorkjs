@@ -7,16 +7,33 @@ Remember jQuery? It's like that, but no one else uses it.
 
 ## Installation
 
-No build step needed. Just download `dork.min.js` from the `dist` folder above and reference it in your HTML.
+No build step needed. 🎉 
+
+Two options:
+
+1. Reference the script in unpkg in your HTML.
+
+```
+<script src="https://unpkg.com/dorkjs@latest"></script>
+```
+
+OR
+
+1. Download `dork.min.js` from the `dist` folder
+1. Reference the downloaded script in your HTML.
 
 ```html
 <script src="dork.min.js"></script>
+```
 
+## Simple example of how `dork` looks
+
+```
 <button id="button1">Button has not been clicked</button>
 
 <script>
-    dork.onload((event, document, $) => {
-      $.listen("#button1", "click", (event, button) => {
+    dork.onload((onloadEvent, document, $) => {
+      $.listen("#button1", "click", (buttonEvent, button) => {
         $.print(button);
         $.inner(button, "Button has been clicked");
       });
