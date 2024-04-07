@@ -15,34 +15,24 @@
     ],
     "keywords": [
         "reactive",
-        "bind",
-        "view",
-        "templating",
+        "html",
         "dom"
     ],
     "scripts": {
         "size": "gzip-size ./dist/dork.min.js --include-original && echo `brotli dist/dork.min.js -c | wc -c | numfmt --to=iec --suffix=B --format='%.2f'` '(brotli)'",
         "check-size": "gzip-size ./dist/dork.min.js --raw",
-        "ts": "tsc",
-        "t": "vitest run",
-        "tw": "vitest",
         "b": "npm run build && stat -f%z dist/dork.min.js | numfmt --to=iec --suffix=B --format='%.2f' && npm run size && npx jsdoc2md --template README.hbs --files src/* --partial doc-partials/body.hbs > README.md",
         "build": "rollup -c",
-        "r": "DEV_SERVER_PORT=4000 DEV_SERVER_ROOT=. dev-server",
-        "sb": "cp CHANGELOG.md docs/source/changelog.md && poetry run sphinx-build -W -b dirhtml docs/source site",
-        "sa": "cp CHANGELOG.md docs/source/changelog.md && poetry run sphinx-autobuild -W -b dirhtml docs/source docs/build"
-    },
-    "jest": {
-        "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.jsx?$"
+        "r": "DEV_SERVER_PORT=4000 DEV_SERVER_ROOT=. dev-server"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/adamghill/dork.git"
+        "url": "git+https://github.com/adamghill/dorkjs.git"
     },
     "bugs": {
-        "url": "https://github.com/adamghill/dork/discussions"
+        "url": "https://github.com/adamghill/dorkjs/discussions"
     },
-    "homepage": "https://github.com/adamghill/dork",
+    "homepage": "https://github.com/adamghill/dorkjs",
     "devDependencies": {
         "@babel/core": "7.4.3",
         "@babel/preset-env": "7.4.3",
